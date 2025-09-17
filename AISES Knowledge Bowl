@@ -1,0 +1,23 @@
+# 1) Clone your empty repo
+git clone https://github.com/joshuaLwilliams01/AI-Safety-Ethics-and-Society-AISES-Knowledge-Bowl.git
+cd AI-Safety-Ethics-and-Society-AISES-Knowledge-Bowl
+
+# 2) Copy your project files into this folder (apps/, packages/, turbo.json, etc.)
+#    If you’re in Cursor, drag the folders/files into this local folder or use your OS file manager.
+
+# 3) Add a good Node .gitignore (so node_modules and .env don’t get committed)
+cat > .gitignore << 'EOF'
+node_modules
+.turbo
+.next
+dist
+build
+.DS_Store
+.env*
+coverage
+EOF
+
+# 4) Commit & push
+git add -A
+git commit -m "Add AISES Knowledge Bowl monorepo (web + Vercel API routes + CSV import)"
+git push -u origin main
